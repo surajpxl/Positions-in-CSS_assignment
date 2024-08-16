@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Discount Button</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .button-container {
+        position: relative;
+      }
+      .discount-button {
+        padding: 12px 32px;
+        background-color: #0056d2;
+        border: none;
+        border-radius: 6px;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+      .discount-badge {
+        background-color: #ff5e5e;
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 6px 12px;
+        font-size: 12px;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        transform: rotate(45deg);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <button class="discount-button">Buy Now
+        <span class="discount-badge">15% Off</span>
+      </button>
+    </div>
+  </body>
+</html>

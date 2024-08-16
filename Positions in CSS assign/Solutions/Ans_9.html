@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrollable Dropdown</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-toggle {
+        background-color: #c5d646;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        max-height: 200px;
+        width: 220px;
+        overflow-y: auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-option {
+        padding: 10px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .dropdown-option:hover {
+        background-color: #f1f1f1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button class="dropdown-toggle">Hover To View Options</button>
+      <div class="dropdown-content">
+        <div class="dropdown-option">Option 1</div>
+        <div class="dropdown-option">Option 2</div>
+        <div class="dropdown-option">Option 3</div>
+        <div class="dropdown-option">Option 4</div>
+        <div class="dropdown-option">Option 5</div>
+        <div class="dropdown-option">Option 6</div>
+        <div class="dropdown-option">Option 7</div>
+        <div class="dropdown-option">Option 8</div>
+        <div class="dropdown-option">Option 9</div>
+        <div class="dropdown-option">Option 10</div>
+      </div>
+    </div>
+  </body>
+</html>

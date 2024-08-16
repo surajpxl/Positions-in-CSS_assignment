@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <style>
+      body {
+        background-color: #758283;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .modal {
+        background-color: #fff;
+        width: 80%;
+        max-width: 700px;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        z-index: 2;
+      }
+
+      .modal h3 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .modal hr {
+        border: 0;
+        border-top: 1px solid #ddd;
+        margin: 10px 0;
+      }
+
+      .modal input,
+      .modal textarea {
+        width: calc(100% - 22px);
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .modal input[type="text"] {
+        height: 40px;
+      }
+
+      .modal input[type="email"],
+      .modal input[type="number"] {
+        height: 40px;
+        width: calc(50% - 12px);
+        display: inline-block;
+        margin-right: 12px;
+      }
+
+      .modal textarea {
+        height: 120px;
+        resize: vertical;
+      }
+
+      .modal button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #5a4bda;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      .modal button:hover {
+        background-color: #4a3fba;
+      }
+
+      .webpage {
+        max-width: 800px;
+        margin: 20px auto;
+        color: #fff;
+        padding: 20px;
+        background: #333;
+        border-radius: 8px;
+      }
+
+      .webpage h1 {
+        font-size: 28px;
+        color: #56d98d;
+        margin-bottom: 10px;
+      }
+
+      .webpage p {
+        line-height: 1.6;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="webpage">
+      <h1>Full Stack Web Development 2.0</h1>
+      <p>
+        Learn front-end and server-side support to build a multi-platform solution. Master the complete web stack programming with React and Node, and develop web apps from start to finish using one of the most trending tech stacks. This course covers data-driven applications, testing, security, and deployment. The MERN stack is known for its versatility, providing comprehensive support for front-end and server-side development.
+      </p>
+      <h2>Course Details</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ea mollitia eveniet, modi minus incidunt ex sunt ut nisi, praesentium minima, quisquam fuga laborum exercitationem cupiditate voluptatem quos dignissimos commodi aliquid alias eum saepe. Eum corrupti voluptates earum voluptate possimus nesciunt expedita vitae nostrum error quis, totam incidunt debitis, iure praesentium similique nisi repellendus. Illum exercitationem perferendis quibusdam, modi minus cupiditate quam itaque facere eveniet amet a nesciunt.
+      </p>
+    </section>
+    <section class="modal">
+      <h3>Want A Free Consultation?</h3>
+      <hr />
+      <input type="text" placeholder="Full Name" />
+      <input type="email" placeholder="Email" />
+      <input type="number" placeholder="Contact Number" />
+      <textarea cols="30" rows="10" placeholder="Message"></textarea>
+      <button>Send Message</button>
+    </section>
+  </body>
+</html>
